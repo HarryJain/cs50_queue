@@ -25,7 +25,30 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.system,
       debugShowCheckedModeBanner: false,
       // This is the main page of the app
-      home: Container(),
+      home: const QueuePage(),
+    );
+  }
+}
+
+class QueuePage extends StatelessWidget {
+  const QueuePage({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    // The Scaffold widget contains useful structures like a title bar,
+    //  floating button, etc.
+    return Scaffold(
+      // Title bar with text child
+      appBar: AppBar(
+        title: const Text('CS50 Queue'),
+      ),
+      // Floating button with a plus sign for adding to the queue
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        // An accessibility description on long press
+        tooltip: 'Increment',
+        child: const Icon(Icons.add),
+      ),
     );
   }
 }
