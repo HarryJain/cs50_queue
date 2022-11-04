@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "856105737406",
+    "project_id": "cs50-queue",
+    "storage_bucket": "cs50-queue.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:856105737406:android:ed2ddef522fba7a52292ef",
+        "android_client_info": {
+          "package_name": "com.cs50.cs50_queue"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "856105737406-uv29d7u2h0p5d43075cdbhh7rgq4g85h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOaDp4FinFsI1jiN6pHFS5POrt3th01wA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "856105737406-uv29d7u2h0p5d43075cdbhh7rgq4g85h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "856105737406-jsifhg4a6g3j4o43hcukef7lfg952fc9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.cs50.cs50Queue"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
