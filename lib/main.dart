@@ -46,7 +46,7 @@ class QueuePage extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         // An accessibility description on long press
-        tooltip: 'Increment',
+        tooltip: 'Join Queue',
         child: const Icon(Icons.add),
       ),
     );
