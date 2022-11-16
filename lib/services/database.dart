@@ -2,9 +2,9 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cs50_queue/models/queue.dart';
 import 'package:cs50_queue/models/queue_entry.dart';
 
-// Declare a DatabaseService class to organize database functions
+// Declare a DatabaseService class to organize database methods
 class DatabaseService {
-  // Constructor (empty because a DatabaseService object is all functions)
+  // Constructor (empty because a DatabaseService object is all methods)
   DatabaseService();
 
   // Store a "pointer" to the queues collection in the database
