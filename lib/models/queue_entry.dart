@@ -40,5 +40,5 @@ class QueueEntry {
         name = doc.get('name'),
         problem = doc.get('problem'),
         table = doc.get('table'),
-        queueTime = doc.get('queueTime');
+        queueTime = doc.get('queueTime').toDate();
 }

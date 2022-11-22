@@ -11,14 +11,15 @@ class DatabaseService {
   final CollectionReference queueCollection =
       FirebaseFirestore.instance.collection('queues');
 
-  // Query the queues collection for all the queueEntries in the given queue,
+  // Query the queues collection for all the queueEntries in the given queueID,
   //  converting each to a QueueEntry object and returning an updating stream
   //  of their data
-  Stream<List<QueueEntry>> queueEntries(Queue queue) {
+  Stream<List<QueueEntry>> queueEntries(String queueID) {
     return queueCollection
-        .doc(queue.queueID)
+        .doc(queueID)
         .collection('queueEntries')
         .orderBy('queueTime')
+        .where('dismissed', isEqualTo: false)
         .snapshots()
         .map((event) => event.docs
             .map((doc) => QueueEntry.fromDocumentSnapshot(doc))
@@ -35,6 +36,19 @@ class DatabaseService {
       'problem': problem,
       'table': table,
       'queueTime': DateTime.now(),
+      'dismissed': false,
+    });
+  }
+
+  // Add a new document to the given queue with the given name, problem, and
+  //  table
+  Future dismiss(String queueID, QueueEntry entry) async {
+    return await queueCollection
+        .doc(queueID)
+        .collection('queueEntries')
+        .doc(entry.entryID)
+        .update({
+      'dismissed': true,
     });
   }
 }
