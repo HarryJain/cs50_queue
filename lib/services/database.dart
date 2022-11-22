@@ -25,11 +25,16 @@ class DatabaseService {
             .toList());
   }
 
-  // Add a new document to the given queue with data from the QueueEntry
-  Future addQueueEntry(Queue queue, QueueEntry queueEntry) async {
-    DocumentReference queueEntryReference = await queueCollection
-        .doc(queue.queueID)
-        .collection('queueEntries')
-        .add(queueEntry.toMap());
+  // Add a new document to the given queue with the given name, problem, and
+  //  table
+  Future addQueueEntry(
+      String queueID, String name, String problem, String table) async {
+    DocumentReference queueEntryReference =
+        await queueCollection.doc(queueID).collection('queueEntries').add({
+      'name': name,
+      'problem': problem,
+      'table': table,
+      'queueTime': DateTime.now(),
+    });
   }
 }

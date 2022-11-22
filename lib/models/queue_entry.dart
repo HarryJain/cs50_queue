@@ -16,8 +16,8 @@ class QueueEntry {
   QueueEntry({
     required this.entryID,
     required this.name,
-    required this.table,
     required this.problem,
+    required this.table,
     required this.queueTime,
   });
 
@@ -27,8 +27,8 @@ class QueueEntry {
     return {
       'entryID': entryID,
       'name': name,
-      'table': table,
       'problem': problem,
+      'table': table,
       'queueTime': queueTime,
     };
   }
@@ -38,7 +38,7 @@ class QueueEntry {
   QueueEntry.fromDocumentSnapshot(DocumentSnapshot<Map<String, dynamic>> doc)
       : entryID = doc.id,
         name = doc.get('name'),
-        table = doc.get('table'),
         problem = doc.get('problem'),
+        table = doc.get('table'),
         queueTime = doc.get('queueTime');
 }
