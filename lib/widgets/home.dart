@@ -1,3 +1,4 @@
+import 'package:cs50_queue/widgets/add_queue_page.dart';
 import 'package:cs50_queue/widgets/queue_page.dart';
 import 'package:flutter/material.dart';
 
@@ -23,7 +24,7 @@ class _HomeState extends State<Home> {
   // List of pages that the BottomNavigationBar contains
   final List<Widget> _pages = [
     const QueuePage(),
-    Container(),
+    const AddQueuePage(),
   ];
 
   @override
@@ -35,9 +36,14 @@ class _HomeState extends State<Home> {
       appBar: AppBar(
         title: const Text('CS50 Queue App'),
       ),
-      // The body is dynamically set to whatever page is at the selected index
-      //  of the BottomNavigationBar
-      body: _pages[_selectedIndex],
+      // The body parameter contains the main content of the Scaffold, here a
+      //  padding widget that provides some margin around the whole body
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        // The body is dynamically set to whatever page is at the selected index
+        //  of the BottomNavigationBar
+        child: _pages[_selectedIndex],
+      ),
       // BottomNavigationBar is a persistent row of buttons for changing which
       //  page of the app you are on
       bottomNavigationBar: BottomNavigationBar(

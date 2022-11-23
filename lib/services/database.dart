@@ -11,6 +11,32 @@ class DatabaseService {
   final CollectionReference queueCollection =
       FirebaseFirestore.instance.collection('queues');
 
+  // Query the queues collection for all the queues that are currently started
+  //  and not yet ended, converting each to a Queue object and returning an
+  //  updating stream of their data
+  Stream<List<Queue>> queues() {
+    return queueCollection
+        .where('startTime', isLessThanOrEqualTo: DateTime.now())
+        .where('endTime', isGreaterThan: DateTime.now())
+        .orderBy('startTime')
+        .snapshots()
+        .map((event) =>
+            event.docs.map((doc) => Queue.fromDocumentSnapshot(doc)).toList());
+  }
+
+  // Add a new queue to the database with the given name, description,
+  //  startTime, endTime, and location
+  Future addQueue(String name, String description, DateTime startTime,
+      DateTime endTime, String location) async {
+    DocumentReference queueEntryReference = await queueCollection.add({
+      'name': name,
+      'description': description,
+      'startTime': startTime,
+      'endTime': endTime,
+      'location': location,
+    });
+  }
+
   // Query the queues collection for all the queueEntries in the given queueID,
   //  converting each to a QueueEntry object and returning an updating stream
   //  of their data

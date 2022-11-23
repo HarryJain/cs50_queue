@@ -15,40 +15,35 @@ class QueuePage extends StatelessWidget {
     //  floating button, etc.
     return Scaffold(
       // The body parameter contains the main content of the Scaffold, here a
-      //  padding widget that provides some margin around the whole body
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        // A StreamBuilder takes in a stream of data and dynamically updates
-        //  the widgets in its builder whenever the data changes
-        child: StreamBuilder(
-          // Here the data stream is all the queue entries from this queue
-          stream: DatabaseService().queueEntries(queueID),
-          // The builder takes in the current snapshot of data and returns a
-          //  list of queue entries if there are any
-          builder: (context, snapshot) {
-            if (snapshot.hasData) {
-              // If there are queue entries, create a list of them
-              return ListView.builder(
-                itemCount: snapshot.data?.length,
-                // Loop over the items in snapshot.data and create a QueueCard
-                //  for each
-                itemBuilder: (context, index) {
-                  // Here, we know that snapshot.data is not null, but we need
-                  //  the ? to confirm this to the compiler
-                  QueueEntry? entry = snapshot.data?[index];
-                  return QueueCard(
-                    entry: entry,
-                    queueID: queueID,
-                    index: index,
-                  );
-                },
-              );
-            } else {
-              // Return an empty container if there are no queue entries
-              return Container();
-            }
-          },
-        ),
+      //  StreamBuilder that dynamically creates a list of queue entries
+      body: StreamBuilder(
+        // Here the data stream is all the queue entries from this queue
+        stream: DatabaseService().queueEntries(queueID),
+        // The builder takes in the current snapshot of data and returns a
+        //  list of queue entries if there are any
+        builder: (context, snapshot) {
+          if (snapshot.hasData) {
+            // If there are queue entries, create a list of them
+            return ListView.builder(
+              itemCount: snapshot.data?.length,
+              // Loop over the items in snapshot.data and create a QueueCard
+              //  for each
+              itemBuilder: (context, index) {
+                // Here, we know that snapshot.data is not null, but we need
+                //  the ? to confirm this to the compiler
+                QueueEntry? entry = snapshot.data?[index];
+                return QueueCard(
+                  entry: entry,
+                  queueID: queueID,
+                  index: index,
+                );
+              },
+            );
+          } else {
+            // Return an empty container if there are no queue entries
+            return Container();
+          }
+        },
       ),
       // Floating button with a plus sign for adding to the queue
       floatingActionButton: FloatingActionButton(

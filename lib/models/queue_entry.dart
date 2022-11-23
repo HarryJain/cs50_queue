@@ -35,7 +35,7 @@ class QueueEntry {
 
   // Method to convert a DocumentSnapshot from Firestore into a QueueEntry
   //  object
-  QueueEntry.fromDocumentSnapshot(DocumentSnapshot<Map<String, dynamic>> doc)
+  QueueEntry.fromDocumentSnapshot(DocumentSnapshot doc)
       : entryID = doc.id,
         name = doc.get('name'),
         problem = doc.get('problem'),

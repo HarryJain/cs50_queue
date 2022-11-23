@@ -37,11 +37,11 @@ class Queue {
   }
 
   // Method to convert a DocumentSnapshot from Firestore into a Queue object
-  Queue.fromDocumentSnapshot(DocumentSnapshot<Map<String, dynamic>> doc)
+  Queue.fromDocumentSnapshot(DocumentSnapshot doc)
       : queueID = doc.id,
         name = doc.get('name'),
         description = doc.get('description'),
-        startTime = doc.get('startTime'),
-        endTime = doc.get('endTime'),
+        startTime = doc.get('startTime').toDate(),
+        endTime = doc.get('endTime').toDate(),
         location = doc.get('location');
 }
