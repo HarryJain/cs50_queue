@@ -14,10 +14,6 @@ class QueuePage extends StatelessWidget {
     // The Scaffold widget contains useful structures like a title bar,
     //  floating button, etc.
     return Scaffold(
-      // Title bar with text child
-      appBar: AppBar(
-        title: const Text('CS50 Queue'),
-      ),
       // The body parameter contains the main content of the Scaffold, here a
       //  padding widget that provides some margin around the whole body
       body: Padding(

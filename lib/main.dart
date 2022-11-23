@@ -1,5 +1,6 @@
 import 'package:cs50_queue/models/queue_entry.dart';
 import 'package:cs50_queue/services/database.dart';
+import 'package:cs50_queue/widgets/home.dart';
 import 'package:cs50_queue/widgets/queue_page.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'CS50 Queue',
+      title: 'CS50 Queue App',
       theme: ThemeData(
         useMaterial3: true,
       ),
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.system,
       debugShowCheckedModeBanner: false,
       // This is the main page of the app
-      home: const QueuePage(),
+      home: const Home(),
     );
   }
 }
