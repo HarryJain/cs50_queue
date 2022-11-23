@@ -2,7 +2,12 @@ import 'package:cs50_queue/services/database.dart';
 import 'package:flutter/material.dart';
 
 class JoinQueueForm extends StatefulWidget {
-  const JoinQueueForm({Key? key}) : super(key: key);
+  const JoinQueueForm({
+    Key? key,
+    required this.queueID,
+  }) : super(key: key);
+
+  final String queueID;
 
   @override
   State<JoinQueueForm> createState() => _JoinQueueFormState();
@@ -11,9 +16,6 @@ class JoinQueueForm extends StatefulWidget {
 class _JoinQueueFormState extends State<JoinQueueForm> {
   // Global key to save the specific state of this form
   final _formKey = GlobalKey<FormState>();
-
-  // Hardcode in the single queue available
-  final String queueID = '4lviuIOEGylkY3UIy7yt';
 
   // Temporary String variables to store the form input (? allows them to
   //  be set to null by default)
@@ -97,7 +99,7 @@ class _JoinQueueFormState extends State<JoinQueueForm> {
                     //  replacing the temporary variables with empty strings
                     //  if they are null)
                     await DatabaseService().addQueueEntry(
-                        queueID, name ?? '', problem ?? '', table ?? '');
+                        widget.queueID, name ?? '', problem ?? '', table ?? '');
                   }
                 },
                 child: const Text('Submit'),

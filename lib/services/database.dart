@@ -16,8 +16,7 @@ class DatabaseService {
   //  updating stream of their data
   Stream<List<Queue>> queues() {
     return queueCollection
-        .where('startTime', isLessThanOrEqualTo: DateTime.now())
-        .where('endTime', isGreaterThan: DateTime.now())
+        //.where('startTime', isGreaterThanOrEqualTo: DateTime.now())
         .orderBy('startTime')
         .snapshots()
         .map((event) =>
