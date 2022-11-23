@@ -1,6 +1,7 @@
 import 'package:cs50_queue/widgets/add_queue_page.dart';
 import 'package:cs50_queue/widgets/queue_page.dart';
 import 'package:flutter/material.dart';
+import 'package:flutterfire_ui/auth.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -35,10 +36,38 @@ class _HomeState extends State<Home> {
       // Title bar with text child
       appBar: AppBar(
         title: const Text('CS50 Queue App'),
+        // Actions are the buttons to the right of the AppBar, here a settings
+        //  IconButton to see the profile page
         actions: [
           IconButton(
             icon: const Icon(Icons.settings),
-            onPressed: () {},
+            // When the settings icon is pressed, open the ProfileScreen page
+            onPressed: () {
+              // The route Navigator "pushes" a new page on top of the old one,
+              //  creating a stack of pages (here the Profile page on top of
+              //  the main navbar/tabs)
+              Navigator.push(
+                context,
+                // Create a MaterialPageRoute, meaning a new route of pages to
+                //  navigate, here containing the ProfileScreen
+                MaterialPageRoute<ProfileScreen>(
+                  // Build the built-in ProfileScreen from firebase_ui, with
+                  //  a custom AppBar and a sign-out action that will pop off
+                  //  the ProfileScreen and update the User status to logged out
+                  //  (hence returning to the sign-in screen)
+                  builder: (context) => ProfileScreen(
+                    appBar: AppBar(
+                      title: const Text('User Profile'),
+                    ),
+                    actions: [
+                      SignedOutAction((context) {
+                        Navigator.of(context).pop();
+                      }),
+                    ],
+                  ),
+                ),
+              );
+            },
           ),
         ],
       ),
