@@ -1,5 +1,6 @@
 import 'package:cs50_queue/models/queue_entry.dart';
 import 'package:cs50_queue/services/database.dart';
+import 'package:cs50_queue/widgets/auth_gate.dart';
 import 'package:cs50_queue/widgets/home.dart';
 import 'package:cs50_queue/widgets/queue_page.dart';
 import 'package:flutter/material.dart';
@@ -28,8 +29,9 @@ class MyApp extends StatelessWidget {
       darkTheme: ThemeData.dark(),
       themeMode: ThemeMode.system,
       debugShowCheckedModeBanner: false,
-      // This is the main page of the app
-      home: const Home(),
+      // This is the main page of the app, here a widget that shows
+      //  the login/register screen if not logged in and the homepage otherwise
+      home: const AuthGate(),
     );
   }
 }

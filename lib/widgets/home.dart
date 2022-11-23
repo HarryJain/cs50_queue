@@ -35,6 +35,12 @@ class _HomeState extends State<Home> {
       // Title bar with text child
       appBar: AppBar(
         title: const Text('CS50 Queue App'),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.settings),
+            onPressed: () {},
+          ),
+        ],
       ),
       // The body parameter contains the main content of the Scaffold, here a
       //  padding widget that provides some margin around the whole body
