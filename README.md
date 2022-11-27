@@ -2,9 +2,9 @@
 
 ## Overview
 
-This step focuses on the actual structure of the app, implementing a Scaffold widget which includes
-- An AppBar with the title of the app
-- A FloatingActionButton with a plus sign that will be used to join the queue
+This step focuses on the actual structure of the app, implementing a `Scaffold` widget which includes
+- An `AppBar` with the title of the app
+- A `FloatingActionButton` with a plus sign that will be used to join the queue
 
 ## Resources
 
@@ -17,6 +17,6 @@ Additionally, you can check out the [Scaffold class documentation](https://api.f
 
 ## Objectives
 By the end of this step, make sure you have
-- [ ] Created the QueuePage StatelessWidget with a Scaffold
-- [ ] Set the appBar property of the Scaffold to an AppBar with a title
-- [ ] Set the floatingActionButton property of the Scaffold to a FloatingActionButton for joining the queue
+- [ ] Created the `QueuePage` StatelessWidget with a `Scaffold`
+- [ ] Set the `appBar` property of the `Scaffold` to an `AppBar` with a title
+- [ ] Set the `floatingActionButton` property of the `Scaffold` to a `FloatingActionButton` for joining the queue
