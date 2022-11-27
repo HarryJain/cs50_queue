@@ -3,9 +3,9 @@
 ## Overview
 This GitHub repository includes the code to create a CS50 queue app using Flutter, intended as an example for the Final Project workshops. It breaks down the code into steps, each included in their own branch (which can be toggled with the button in the top left). In particular, it includes the following steps:
 1. Setting up a Firebase backend for the Firestore database and authentication
-2. Creating a basic Flutter app Scaffold
+2. Creating a basic Flutter app `Scaffold`
 3. Making model objects for interacting with the database
-4. Writing a DatabaseService object to interact with the database
+4. Writing a `DatabaseService` object to interact with the database
 5. Create a form for users to join the queue
 6. Display the current queue members in a list view
 7. Organize widgets into separate files
@@ -15,7 +15,7 @@ This GitHub repository includes the code to create a CS50 queue app using Flutte
 11. Add authentication with sign-in and register (can be done any time after step 1)
 12. Make a profile page for checking the authentication status.
 
-Each of these steps will have their own README.md file with additional resources and links to help you along. Moreover, the first few steps will be included in the in-person workshop before the CS50 hackathon! There is no need to understand or follow everything, but hopefully this contains enough reference for you to create the app of your dreams!
+Each of these steps will have their own `README.md` file with additional resources and links to help you along. Moreover, the first few steps will be included in the in-person workshop before the CS50 hackathon! There is no need to understand or follow everything, but hopefully this contains enough reference for you to create the app of your dreams!
 
 ## Resources
 
