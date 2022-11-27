@@ -1,5 +1,6 @@
 # Step 5: Join Queue Form
 
+## Overview
 This step involves creating a form for adding yourself to the queue when you press the add floating action button.
 
 ## Resources
