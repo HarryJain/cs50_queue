@@ -1,16 +1,14 @@
-# cs50_queue
+# Step 11: Authentication
 
-A Flutter app for keeping track of the CS50 queue
+## Overview
 
-## Getting Started
+This step is a very useful one for making any kind of personalized application and could really be done any time after the initial Firebase setup in Step 1. It utilizes the built-in widgets from Firebase UI Auth.
 
-This project is a starting point for a Flutter application.
+## Resources
 
-A few resources to get you started if this is your first Flutter project:
+For this portion of the workshop, there are two main resources
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- [Lab: Add a user authentication flow to a Flutter app using FirebaseUI](https://firebase.google.com/codelabs/firebase-auth-in-flutter-apps?hl=en#0)
+- [The Firebase UI Auth package documentation](https://pub.dev/packages/firebase_ui_auth)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+If you follow the steps of the lab, you will end up with very similar code to Steps 11 and 12 of the workshop.
