@@ -1,5 +1,6 @@
 # Step 7: Widgets Organization
 
+## Overview
 This step is relatively straightforward. We merely divide up our widgets into individual files and folders.
 
 ## Resources
