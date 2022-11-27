@@ -1,5 +1,7 @@
 # Step 1: Firebase Setup
 
+## Overview
+
 In this step, we set up our application to use Google's Firebase backend. This will provide us with a database, authentication, website hosting, and more!
 
 ## Resources
