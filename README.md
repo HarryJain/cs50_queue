@@ -1,16 +1,9 @@
-# cs50_queue
+# Step 8: Bottom Navigation Bar
 
-A Flutter app for keeping track of the CS50 queue
+## Overview
 
-## Getting Started
+Once again, this step is a pretty straightforward implementation of a built-in Flutter widget: BottomNavigationBar. In order to do so, we create a Home widget with a BottomNavigationBar that changes which page the Home widget displays as the body of its Scaffold.
 
-This project is a starting point for a Flutter application.
+## Resources
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This implementation follows the [official docs](https://api.flutter.dev/flutter/material/BottomNavigationBar-class.html) fairly closely, so that is probably the best place to look!
