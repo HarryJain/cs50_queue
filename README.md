@@ -1,16 +1,11 @@
-# cs50_queue
+# 3: Queue Models
 
-A Flutter app for keeping track of the CS50 queue
+In this step, we create models for our database data, in particular creating model objects for a Queue and a QueueEntry, including all the data necessary for both collections in our database. 
 
-## Getting Started
+## Reference
 
-This project is a starting point for a Flutter application.
+In this step, we primarily based our models based on [Peter Coding's tutorial](https://petercoding.com/firebase/2022/02/16/how-to-model-your-firebase-data-class-in-flutter/). Additionally, it may be useful to check out these general resources on NoSQL databases (like Cloud Firestore) and object-oriented programming (the paradigm under which we design database models):
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [NoSQL Database Video](https://youtu.be/v_hR4K4auoQ)
+- [Firestore Data Models](https://hevodata.com/learn/firestore-data-model/)
+- [Object Oriented Programming Basics](https://www.freecodecamp.org/news/what-is-object-oriented-programming/)
