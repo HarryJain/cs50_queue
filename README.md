@@ -1,16 +1,10 @@
-# cs50_queue
+# Step 5: Join Queue Form
 
-A Flutter app for keeping track of the CS50 queue
+This step involves creating a form for adding yourself to the queue when you press the add floating action button.
 
-## Getting Started
+## Resources
 
-This project is a starting point for a Flutter application.
+Most of this step is based on the official Flutter documentation, primarily
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [The Form widget](https://docs.flutter.dev/cookbook/forms/validation)
+- [The showModalBottomSheet function](https://api.flutter.dev/flutter/material/showModalBottomSheet.html) to display the form as a floating sheet
