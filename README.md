@@ -1,16 +1,11 @@
-# cs50_queue
+# Step 9: Add Queue
 
-A Flutter app for keeping track of the CS50 queue
+This step implements the functionality for adding a new queue, e.g. a queue for Flutter projects. It does so using a very similar form to the one for joining the queue, so many of the same principles apply.
 
-## Getting Started
+## Resources
 
-This project is a starting point for a Flutter application.
+Beyond the resources for the Join Queue Form in Step 5, there are a few new widgets introduced here:
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [IconButton](https://api.flutter.dev/flutter/material/IconButton-class.html)
+- [Expanded](https://api.flutter.dev/flutter/widgets/Expanded-class.html)
+- [DatePicker](https://pub.dev/packages/flutter_datetime_picker) from the flutter_datetime_picker package (see the [installing page](https://pub.dev/packages/flutter_datetime_picker/install) for more instructions)
