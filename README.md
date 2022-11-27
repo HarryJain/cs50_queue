@@ -1,7 +1,7 @@
 # Step 3: Queue Models
 
 ## Overview
-In this step, we create models for our database data, in particular creating model objects for a Queue and a QueueEntry, including all the data necessary for both collections in our database. 
+In this step, we create models for our database data, in particular creating model objects for a `Queue` and a `QueueEntry`, including all the data necessary for both collections in our database. 
 
 ## Reference
 
@@ -13,6 +13,6 @@ In this step, we primarily based our models based on [Peter Coding's tutorial](h
 
 ## Objectives
 By the end of this step, make sure you have
-- [ ] Created a models subfolder of lib
-- [ ] Created a queue.dart file with a Queue class, its instance variables, constructor, toMap function, and fromDocumentSnapshot constructor
-- [ ] Created a queue_entry.dart file with a QueueEntry class, its instance variables, constructor, toMap function, and fromDocumentSnapshot constructor
+- [ ] Created a `models` subfolder of `lib`
+- [ ] Created a `queue.dart` file with a `Queue` class, its instance variables, constructor, `toMap` function, and `fromDocumentSnapshot` constructor
+- [ ] Created a `queue_entry.dart` file with a `QueueEntry` class, its instance variables, constructor, `toMap` function, and `fromDocumentSnapshot` constructor
