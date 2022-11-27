@@ -1,16 +1,19 @@
-# cs50_queue
+# Step 1: Firebase Setup
 
-A Flutter app for keeping track of the CS50 queue
+In this step, we set up our application to use Google's Firebase backend. This will provide us with a database, authentication, website hosting, and more!
 
-## Getting Started
+## Resources
 
-This project is a starting point for a Flutter application.
+For this step, you can generally follow the steps available at:
 
-A few resources to get you started if this is your first Flutter project:
+- [Google Documentation: Add Firebase to your Flutter app](https://firebase.google.com/docs/flutter/setup?platform=ios)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+By the end of this step, make sure you have
+- [ ] Installed your preferred text editor or IDE
+- [ ] Installed Flutter and created a blank app
+- [ ] Signed into Firebase using your Google account
+- [ ] Installed the Firebase CLI
+- [ ] Installed the FlutterFire CLI
+- [ ] Run `flutterfire configure` to create the `firebase_options.dart` configuration file
+- [ ] Run `flutter pub add firebase_core` to install the core plugin to your app
+- [ ] Initialize Firebase with `DefaultFirebaseOptions` in `main.dart`
