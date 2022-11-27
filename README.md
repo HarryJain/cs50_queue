@@ -1,5 +1,6 @@
 # Step 4: Database Service
 
+## Overview
 In this step, we will implement a DatabaseService object for interacting with our Cloud Firestore database.
 
 ## Resources
