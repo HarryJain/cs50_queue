@@ -1,16 +1,7 @@
-# cs50_queue
+# Step 10: Queue Tabs
 
-A Flutter app for keeping track of the CS50 queue
+Now that our app has capability for having multiple queues, this step implements a tabbed interface for navigating between them on the homepage.
 
-## Getting Started
+## Resources
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This implementation again follows the [official docs for a DefaultTabController](https://api.flutter.dev/flutter/material/DefaultTabController-class.html) fairly closely, so that is probably the best place to look!
