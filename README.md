@@ -1,16 +1,13 @@
-# cs50_queue
+# Step 6: Queue Listview
 
-A Flutter app for keeping track of the CS50 queue
+With this step, we take our queue data from the form and display it as a list, with dismissable cards for each member of the queue.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+For this step, the most useful resources are:
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [Official listview documentation](https://api.flutter.dev/flutter/widgets/ListView-class.html)
+- [Official streambuilder documentation](https://api.flutter.dev/flutter/widgets/StreamBuilder-class.html)
+- [The Net Ninja's listview video](https://youtu.be/TKM6_MTNGsI)
+- [The Net Ninja's streambuilder video](https://youtu.be/PT3v28eyOqg)
+- [A nice listview example](https://proandroiddev.com/flutter-thursday-02-beautiful-list-ui-and-detail-page-a9245f5ceaf0) on which I based some of the design
