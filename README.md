@@ -14,3 +14,9 @@ For this step, it will be useful to understand the basic idea of a Flutter widge
 - [The Net Ninja video](https://youtu.be/C5lpPjoivaw)
 
 Additionally, you can check out the [Scaffold class documentation](https://api.flutter.dev/flutter/material/Scaffold-class.html) for specific information and customization options.
+
+## Objectives
+By the end of this step, make sure you have
+- [ ] Created the QueuePage StatelessWidget with a Scaffold
+- [ ] Set the appBar property of the Scaffold to an AppBar with a title
+- [ ] Set the floatingActionButton property of the Scaffold to a FloatingActionButton for joining the queue
