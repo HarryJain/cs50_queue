@@ -1,5 +1,6 @@
 # Step 6: Queue Listview
 
+## Overview
 With this step, we take our queue data from the form and display it as a list, with dismissable cards for each member of the queue.
 
 ## Getting Started
