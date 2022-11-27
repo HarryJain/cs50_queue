@@ -10,3 +10,9 @@ In this step, we primarily based our models based on [Peter Coding's tutorial](h
 - [NoSQL Database Video](https://youtu.be/v_hR4K4auoQ)
 - [Firestore Data Models](https://hevodata.com/learn/firestore-data-model/)
 - [Object Oriented Programming Basics](https://www.freecodecamp.org/news/what-is-object-oriented-programming/)
+
+## Objectives
+By the end of this step, make sure you have
+- [ ] Created a models subfolder of lib
+- [ ] Created a queue.dart file with a Queue class, its instance variables, constructor, toMap function, and fromDocumentSnapshot constructor
+- [ ] Created a queue_entry.dart file with a QueueEntry class, its instance variables, constructor, toMap function, and fromDocumentSnapshot constructor
