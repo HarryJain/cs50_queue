@@ -1,5 +1,6 @@
 # 3: Queue Models
 
+## Overview
 In this step, we create models for our database data, in particular creating model objects for a Queue and a QueueEntry, including all the data necessary for both collections in our database. 
 
 ## Reference
