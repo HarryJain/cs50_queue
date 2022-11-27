@@ -10,6 +10,7 @@ For this step, you can generally follow the steps available at:
 
 - [Google Documentation: Add Firebase to your Flutter app](https://firebase.google.com/docs/flutter/setup?platform=ios)
 
+## Objectives
 By the end of this step, make sure you have
 - [ ] Installed your preferred text editor or IDE
 - [ ] Installed Flutter and created a blank app
