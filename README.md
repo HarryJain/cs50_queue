@@ -1,16 +1,9 @@
-# cs50_queue
+# Step 4: Database Service
 
-A Flutter app for keeping track of the CS50 queue
+In this step, we will implement a DatabaseService object for interacting with our Cloud Firestore database.
 
-## Getting Started
+## Resources
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This step is primarily based on the [Flutter & Firebase App playlist](https://youtube.com/playlist?list=PL4cUxeGkcC9j--TKIdkb3ISfRbJeJYQwC) from The Net Ninja on YouTube, primarily
+- [#16 - Firestore Database Setup](https://youtu.be/mtNA1neFNVo)
+- [#18 - Firestore Streams](https://youtu.be/10PcEkQsF9Y)
