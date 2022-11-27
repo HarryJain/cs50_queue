@@ -1,16 +1,3 @@
-# cs50_queue
+# Step 7: Widgets Organization
 
-A Flutter app for keeping track of the CS50 queue
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This step is relatively straightforward. We merely divide up our widgets into individual files and folders, similar to [The Net Ninja Flutter & Firebase tutorial](https://github.com/iamshaunjp/flutter-firebase/tree/lesson-27/brew_crew/lib).
