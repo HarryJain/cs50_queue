@@ -8,6 +8,6 @@ This implementation again follows the [official docs for a DefaultTabController]
 
 ## Objectives
 By the end of this step, make sure you have
-- [ ] Extract the old `QueuePage` code into a new `QueueTab` `StatelessWidget` with a required `queueID` string variable
+- [ ] Extracted the old `QueuePage` code into a new `QueueTab` `StatelessWidget` with a required `queueID` string variable
 - [ ] Modified the `QueuePage` widget to be a `StreamBuilder` connected to the `queues` stream from the database which returns a `DefaultTabController` when it has data
-- [ ] Nest a `Scaffold` inside the `DefaultTabController` with a `TabBar` in the `appBar` and `TabBarView` in the `body` whose children are a list of `QueuePage`s mapped from the `queues` stream
+- [ ] Nested a `Scaffold` inside the `DefaultTabController` with a `TabBar` in the `appBar` and `TabBarView` in the `body` whose children are a list of `QueuePage`s mapped from the `queues` stream
