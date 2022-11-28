@@ -12,3 +12,8 @@ For this portion of the workshop, there are two main resources
 - [The Firebase UI Auth package documentation](https://pub.dev/packages/firebase_ui_auth)
 
 If you follow the steps of the lab, you will end up with very similar code to Steps 11 and 12 of the workshop.
+
+## Objectives
+By the end of this step, make sure you have
+- [ ] Created the `AuthGate` `StatelessWidget` in `auth_gate.dart` that returns a `StreamBuilder` with a stream of `authStateChanges`, whose `builder` returns a `SignInScreen` if there is no data (no logged in user) and the `Home` widget otherwise
+- [ ] Modified the `home` of the `MaterialApp` in `main.dart` to return an `AuthGate` widget
