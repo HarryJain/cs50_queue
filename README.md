@@ -12,3 +12,8 @@ Like in Step 11, there are two main resources
 - [The Firebase UI Auth package documentation](https://pub.dev/packages/firebase_ui_auth)
 
 If you follow the steps of the lab, you will end up with very similar code to Steps 11 and 12 of the workshop.
+
+## Objectives
+By the end of this step, make sure you have
+- [ ] Added an `IconButton` inside the app bar `actions` in `home.dart`
+- [ ] Set the `onPressed` property of that `IconButton` to `push` a `MaterialPageRoute` that builds a `ProfileScreen` and has a `SignedOutAction` that pops this profile page off the `Navigator` stack
